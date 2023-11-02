@@ -1,0 +1,100 @@
+main#register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    background: ghostwhite; /* Background color for the entire page, choose a light color */
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    backdrop-filter: blur(5px); /* Apply a blur filter to the overlay, affecting only the background */
+  }
+  
+  .registration-form {
+    position: relative; /* Set the form's position to relative for overlay stacking */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #34495e, #3498db, #85c1e9); /* Multi-color gradient */
+    color: #ecf0f1; /* Text color for the form */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #ecf0f1; /* Text color for labels */
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"],
+  .form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ecf0f1; /* Add an underline effect */
+    background: transparent;
+    color: #ecf0f1; /* Text color for input fields */
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .error {
+    color: #e74c3c; /* Error text color */
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    background: #3498db;
+    color: #ecf0f1;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  .register-link {
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .register-link a:hover {
+    color: #2980b9;
+  }
+  
